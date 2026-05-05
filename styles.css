@@ -10,7 +10,11 @@ body {
     border-color: black;
     border-width: 3px;
     border-radius: 5px;
-    height: 200px;
+    height: 800px;
     text-align: center;
 }
 
+table {
+    margin: auto;
+    border-collapse: collapse;
+}

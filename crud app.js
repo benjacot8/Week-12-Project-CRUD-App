@@ -2,3 +2,18 @@
 
 console.log("Testing connection to JavaScript file...");
 console.log("Connection successful!");
+
+
+// CREATE
+
+
+
+// READ
+
+
+
+// UPDATE
+
+
+
+// DELETE
