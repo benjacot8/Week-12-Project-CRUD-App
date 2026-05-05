@@ -1,0 +1,16 @@
+/* Cascading Style Sheets for Week 12 Project: Create, Read, Update, Delete App */
+
+h1 {
+    color: goldenrod
+}
+
+body {
+    background-color: lightblue;
+    border-style: dotted;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 5px;
+    height: 200px;
+    text-align: center;
+}
+
