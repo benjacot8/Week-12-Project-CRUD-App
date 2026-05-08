@@ -14,8 +14,6 @@ function addItem(id, item, quantity) {
 }
 
 
-
-
 // CREATE
 addItem(4, "Grapes", 8);
 addItem(5, "Strawberries", 10);
@@ -29,7 +27,12 @@ const selectedItem = shoppingList.find(item => item.id === 2);
 console.log(selectedItem);
 
 // UPDATE
-
+const updateItem = {...selectedItem, name: 'Updated Item' };
+const index = shoppingList.findIndex(item => item.id === 2);
+shoppingList[index] = updateItem;
+console.table(shoppingList);
 
 
 // DELETE
+const updatedItems = shoppingList.filter(item => item.id !== 3);
+console.table(updatedItems);
