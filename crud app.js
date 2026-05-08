@@ -25,8 +25,8 @@ console.table(shoppingList);
 
 
 // READ
-const selectedItem = shoppingList.find(item => item.id === 3);
-
+const selectedItem = shoppingList.find(item => item.id === 2);
+console.log(selectedItem);
 
 // UPDATE
 
