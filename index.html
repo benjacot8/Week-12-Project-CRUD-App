@@ -13,6 +13,8 @@
 
 </head>
 <body>
+
+
     <h1>Week 12 Project: Create, Read, Update, Delete App</h1>
 
     <!-- Description of the app -->
@@ -22,6 +24,7 @@
     <img src="fruits.jpg" alt="Fruits" width="400" height="400">
 
     <!-- Grocery list table with items and quantities -->
+    <h3>Grocery List</h3>
     <table>
         <thead>
             <tr>
@@ -44,6 +47,16 @@
             </tr>
         </tbody>
     </table>
+
+    <!-- Form for adding new items -->
+    <h3>Add New Item</h3>
+    <form>
+        <label for="item">Item:</label>
+        <input type="text" id="item" name="item" required>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required>
+        <button type="submit">Add Item</button>
+    </form>
 
 </body>
 </html>
