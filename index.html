@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 12 Project</title>
     
-    <!--Link to CSS and JS-->
+    <!--Link to CSS-->
     <link rel="stylesheet" href="styles.css">
-    <script src="crud app.js"></script>
 
 </head>
-<body>
+<body class="container mt-5">
 
     <h1>Week 12 Project: Create, Read, Update, Delete App</h1>
 
@@ -20,60 +19,38 @@
     <!-- Image of fruits -->
     <img src="fruits.jpg" alt="Fruits" width="400" height="400">
 
-    <!-- Grocery list table with items and quantities -->
-    <h3>Grocery List</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Item</th>
-                <th>Quantity</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Apples</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>Bananas</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>Oranges</td>
-                <td>7</td>
-            </tr>
-        </tbody>
-    </table>
 
-    <!-- Form for adding new items -->
-    <h3>Add New Item</h3>
-    <!-- Create Form -->
-    <form id="shoppingForm" class="mb-4">
-      <div class="input-group">
-        Grocery Item Name:
-        <input
-          type="text"
-          id="title"
-          class="form-control"
-          placeholder="Enter item name"
-          required
-        />
-        Quantity:
-        <input
-          type="number"
-          id="quantity"
-          class="form-control"
-          placeholder="Enter quantity"
-          required
-        />
-        <button class="btn btn-primary">Add item</button>
-      </div>
-    </form>
+  <h1 class="mb-4">Shopping List</h1>
 
-    <!-- Shopping List -->
-    <h3>Shopping List</h3>
-    <ul id="shoppingList">
-    </ul>
+  <!-- FORM -->
+  <form id="shoppingForm" class="mb-4">
 
+    <input
+      type="text"
+      id="itemInput"
+      class="form-control mb-2"
+      placeholder="Item name"
+      required
+    >
+
+    <input
+      type="number"
+      id="quantityInput"
+      class="form-control mb-2"
+      placeholder="Quantity"
+      required
+    >
+
+    <button class="btn btn-primary">
+      Add Item
+    </button>
+
+  </form>
+
+  <!-- DISPLAY ITEMS -->
+  <ul id="shoppingList" class="list-group"></ul>
+
+<!--Link to JavaScript-->
+  <script src="script.js" defer></script>
 </body>
 </html>
